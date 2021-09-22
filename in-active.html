@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BBM | In Active</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 758px;
+            background: #f3f3f3;
+        }
+
+        .wp_header {
+            width: 100%;
+            height: 80px;
+
+            background: #868686;
+        }
+
+        #lheader {
+            width: 100%;
+            height: 50px;
+            left: 25px;
+            top: 25px;
+        }
+
+        #idHead {
+            font-size: 28px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        #form_search {
+            position: absolute;
+            left: 66px;
+            width: 1440px;
+            margin-bottom: 7px;
+            height: 200px;
+            z-index: 1;
+        }
+
+        .c1 {
+            height: 23px;
+            top: 40px;
+
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 140.62%;
+
+            color: #4F4F4F;
+        }
+
+        .c2 {
+            width: 380px;
+            height: 35px;
+            left: 180px;
+            top: 10px;
+            box-sizing: border-box;
+        }
+
+        .c3 {
+            height: 23px;
+            left: 630px;
+            top: -17px;
+
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 140.62%;
+
+            color: #4F4F4F;
+        }
+
+        .c4 {
+            width: 380px;
+            height: 35px;
+            left: 765px;
+            top: -48px;
+
+            box-sizing: border-box;
+        }
+
+        .c5 {
+            width: 195px;
+            height: 35px;
+            left: 1280px;
+            top: -84px;
+
+            box-sizing: border-box;
+        }
+
+        #btn {
+            width: 350px;
+            height: 35px;
+            left: 180px;
+            top: 234px;
+
+            background: #868686;
+            border: 1px solid #C4C4C4;
+            box-sizing: border-box;
+        }
+
+        .number {
+            position: absolute;
+            width: 55.13px;
+            height: 20px;
+            left: 735px;
+            top: 281px;
+
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 140.62%;
+
+
+            color: #4F4F4F;
+        }
+
+        .tb {
+            position: absolute;
+            width: 1555px;
+            top: 300px;
+            left: 75px;
+        }
+
+        .th1 {
+            width: 117px;
+            height: 50px;
+            left: 60px;
+            top: 304px;
+            border: 1px solid #dadada;
+            text-align: center;
+        }
+
+        .td1 {
+            left: 60px;
+            top: 304px;
+            border: 1px solid #dadada;
+            text-align: center;
+        }
+
+        .paginate1 {
+            position: absolute;
+            top: 737px;
+        }
+
+        #chose_page {
+            width: 80px;
+        }
+
+        #txt_page {
+
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 140.62%;
+            color: #4F4F4F;
+            margin-left: -25px;
+
+        }
+
+        #menu_change {
+            position: absolute;
+            left: 1225px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wp_content">
+        <div class="wp_header">
+            <div class="row" id="lheader">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#" class="logo_img">
+                                <img src="images/logo.png" style="width: 250px; margin: 15px;">
+                            </a>
+                        </div>
+                        <div class="col-md-8" style="margin: 20px;">
+                            <h3 id="idHead">Quản lý kinh doanh hàng mới
+                                <!-- Truyền Title(Nếu có) -->
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2" style="position: absolute;margin: 16px;left: 90%;">
+                    <div class="row" style="width: 66px;height: 26px;left: 1305px;top: 39px;">
+                        <div class="col-md-6">
+                            <a href="#" style="font-size: 30px; color: #FFFFFF;"><span class="iconify"
+                                    data-icon="ant-design:home-filled"></span>
+                                <!-- Truyền dữ liêu ra trang chủ -->
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" style="font-size: 30px; color: #FFFFFF;"><span class="iconify"
+                                    data-icon="codicon:three-bars"></span>
+                                <!-- Datalist -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container">
+            <div class="row" id="form_search">
+                <div>
+                    <div class="col-md-12" style="margin-bottom: -110px;margin-top: -20px;">
+                        <div class="col c1">
+                            <label>Nguồn nhập</label>
+                        </div>
+                        <div class="col c2">
+                            <select class="form-control" id="select_nguon_nhap">
+
+                                <option value=""></option>
+                                <option value="Nhập khẩu">Nhập khẩu</option>
+                                <option value="Nội địa">Nội địa</option>
+                            </select>
+                        </div>
+                        <div class="col c3">
+                            <label>Mùa vụ</label>
+                        </div>
+                        <div class="col c4">
+                            <select name="MuaVu" class="form-control" id="select_mua_vu">
+                                <option value=""></option>
+                                <option value="Xuân Hè">Xuân Hè</option>
+                                <option value="Thu đông">Thu đông</option>
+                                <option value="Đông">Đông</option>
+                                <option value="Quanh năm">Quanh năm</option>
+                            </select>
+                        </div>
+                        <div class="col c5">
+                            <a href="#" class="form-control btn btn-secondary">
+                                <span class="iconify" data-icon="fa-solid:search"></span>Tìm kiếm
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin-bottom: -110px;">
+                        <div class="col c1">
+                            <label>Division</label>
+                        </div>
+                        <div class="col c2">
+                            <select class="form-control" id="select_division">
+                                <option value=""></option>
+                                <option value="17 - Đồ chơi & vận động">17 - Đồ chơi & vận động</option>
+                            </select>
+                        </div>
+                        <div class="col c3">
+                            <label>NCC</label>
+                        </div>
+                        <div class="col c4">
+                            <input type="search" name="vendor" class="form-control" list="vendor_datalist"
+                                placeholder="--- Chọn NCC ---" id="ipt_ncc" />
+                        </div>
+                        <div class="col c5">
+                            <a href="#" class="form-control btn btn-secondary">
+                                <span class="iconify" data-icon="carbon:save"></span>Gửi duyệt
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin-bottom: -75px;">
+                        <div class="col c1">
+                            <label>Function</label>
+                        </div>
+                        <div class="col c2">
+                            <select class="form-control" id="select_function">
+                                <option value=""></option>
+                                <option value="111473 - Xe 3 bánh">111473 - Xe 3 bánh</option>
+                                <option value="114571 - Công tơ điện">114571 - Công tơ điện</option>
+                            </select>
+                            <a id="btn" href="#" class="form-control btn btn-secondary">
+                                <span class="iconify" data-icon="si-glyph:circle-load-left"></span>PO Tổng
+                            </a>
+                        </div>
+                        <div class="col c3">
+                            <label>Brand</label>
+                        </div>
+                        <div class="col c4">
+                            <select id="select_brand" class="form-control">
+                                <option value=""></option>
+                                <option value="100001 - 137 Degrees">100001 - 137 Degrees</option>
+                                <option value="100003 - 502">100003 - 502</option>
+                                <option value="100810 - BIBOS">100810 - BIBOS</option>
+                            </select>
+                            <a id="btn" href="#" class="form-control btn btn-secondary">
+                                <span class="iconify" data-icon="uil:corner-up-right"></span>Duyệt PO Urgent</a>
+                        </div>
+                        <div class="col c5">
+                            <a href="#" class="form-control btn btn-secondary">
+                                <span class="iconify" data-icon="bytesize:import"></span>Xuất excel
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tb">
+            <table class="table" id="table">
+                <thead class="table-secondary">
+                    <tr>
+                        <th class="th1">Mã NCC TT</th>
+                        <th class="th1">Tên NCC TT</th>
+                        <th class="th1">TT thuê kệ</th>
+                        <th class="th1">Mã hàng</th>
+                        <th class="th1">Tên hàng</th>
+                        <th class="th1">Range</th>
+                        <th class="th1">XH 631</th>
+                        <th class="th1">SL YTD</th>
+                        <th class="th1">GP YTD</th>
+                        <th class="th1">SL D-30</th>
+                        <th class="th1">% GP</th>
+                        <th class="th1">% Group</th>
+                        <th class="th1">SL tồn</th>
+                        <th class="th1">Giá trị kho</th>
+                        <th class="th1">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="td1"></td>
+                        <td class="td1"></td>
+                        <td class="td1"></td>
+                        <td class="td1"></td>
+                        <td class="td1"></td>
+                        <td class="td1"></td>
+                        <td class="td1"></td>
+                        <td class="td1"></td>
+                        <td class="td1"></td>
+                        <td class="td1"></td>
+                        <td class="td1"></td>
+                        <td class="td1"></td>
+                        <td class="td1"></td>
+                        <td class="td1"></td>
+                        <td class="td1"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
